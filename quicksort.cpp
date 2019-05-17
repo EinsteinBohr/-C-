@@ -15,7 +15,7 @@ int partition(vector<T> &a,int left,int right){
         while(lo<ro && a[lo]<temp)lo++;
         while(lo<ro && a[ro]>temp)ro--;
         swap(a[lo++],a[ro--]);
-        //移动指针，使可以继续进行，否则会死循环
+        //移动指针，否则会死循环
     }
     return ro;
 }
